@@ -101,10 +101,10 @@ while game_status == True:
 
     compare(user_sum, computer_sum)
 
-#play again doesn't work right now, just run program again
-
     restart_game = input("Do you want to restart and play again? Type 'y' or 'n': ").lower()
     if restart_game == "y":
         clear()
         print(logo)
         game_status = True
+    else:
+        sys.exit()
